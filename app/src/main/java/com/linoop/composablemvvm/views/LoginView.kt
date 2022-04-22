@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun LoginPage(viewModel: MainViewModel) {
-    /*val loginResponse = produceState<Resource<LoginResponse>>(initialValue = Resource.Loading()){
+   /* val loginResponse = produceState<Resource<LoginResponse>>(initialValue = Resource.Loading()){
         value = viewModel.login("admin", "admin")
     }.value*/
     var loginResponse  by remember {
