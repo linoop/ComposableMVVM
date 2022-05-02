@@ -7,10 +7,11 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface MyApi {
+    //192.168.1.114:8000/api/user/login
     @FormUrlEncoded
-    @POST("/user_app/login")
+    @POST("api/user/login")
     suspend fun login(
-        @Field("username") username: String,
+        @Field("email") username: String,
         @Field("password") password: String
     ):LoginResponse
 }
